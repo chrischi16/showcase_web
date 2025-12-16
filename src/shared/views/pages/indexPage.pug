@@ -1,0 +1,39 @@
+extends ../layouts/full-html.pug
+
+block content
+    // wenn was gesucht wurde -> mache Liste aus gefundenen Beiträgen
+
+    if foundPosts.length > 0    
+        h1 Gefundene Beiträge
+        ul
+            each post in foundPosts
+                +foundPostElement(post)
+    h1 Neueste Beiträge
+    ul
+        each post in recentPosts 
+            li
+                +blogpostPreview(post)
+    h1 Populärste Kommentare 
+    ul 
+        each comment in popularComments
+            li
+                +commentPreview(comment)
+    h1 Alle Beiträge
+    ul
+        each post in allPosts
+            li
+                +blogpostPreview(post)
+    br
+    br
+    input(type="button", value=">", action="/pgForward", method="post")
+    input(type="button", value="<", action="/pgBackward", method="post")
+
+    form(action="/", method="get")
+        label Einträge pro Seite:
+        select(name="limit")
+            option(value="5", selected=limit === 5) 5
+            option(value="10", selected=limit === 10) 10
+            option(value="20", selected=limit === 20) 20
+            option(value="50", selected=limit === 50) 50
+        input(type="submit", value="Anwenden")
+    br 

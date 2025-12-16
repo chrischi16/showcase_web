@@ -1,0 +1,20 @@
+header
+    .container(direction="row")
+        .flex-item
+            a(href="/") Blok
+        .flex-item
+            img(src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png", alt="Logo", width="400", height="400")
+        .flex-item
+            if user
+                p Eingeloggt als #{user.author}
+                img(src=user.avatar, alt="Useravatar", width="100", height="100")
+                br
+                a(href="/profile/" + user.id) Profil
+                form(action="/profile/logout", method="post")
+                    input(type="submit", value="Logout")
+            else
+                a(href="/login") Login
+            if isHomepage
+                form(action="/search", method="get")
+                    input(type="text", name="query", placeholder="Suche...")
+                    input(type="submit", value="Suchen")

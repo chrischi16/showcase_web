@@ -1,0 +1,24 @@
+extends ../layouts/full-html.pug
+
+block content
+    h2 Profil von #{firstname} #{lastname} - #{profileOwner}
+    br
+    br
+    img(src=avatar alt="Avatar" width="200" height="200")
+    br
+    br
+    p ID: #{userid}
+    p Autorname: #{userauthor}
+    p Vorname: #{firstname}
+    p Nachname: #{lastname}
+    ol 
+        each skill in userSkills 
+            +allUserSkills(skill)
+    br
+    br
+
+    a(href=`/profile/edit/${userid}`) Profil bearbeiten
+    br
+    br
+
+    a(href="/") Zurück zur Startseite

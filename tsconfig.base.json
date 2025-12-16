@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "moduleResolution": "node10",
+        "module": "ESNext",
+        "rootDir": "src",
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "@shared/*": ["src/shared/*"]
+        }
+    },
+    "include": ["src/shared"],
+    "exclude": ["dist", "node_modules"]
+}

@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= theTitle 
+        // # Variablen in Pug geht auch mit = und :
+        // # und {} Markieren Variablen in Pug
+    body 
+        include ../partials/header.pug
+        // Dateien einbinden -> .. hoch springen und dann in partials gehen
+        // Muster form
+        form
+            input(name="username", type="text")
+            input(name="password", type="password")
+            input(name="lucky", type="number", value="7", min="1", max="10")
+            input(name="serverzeit", type="servertime")
+            input(type="submit")
+
+        // Liste mit Variablen und Schleife machen
+        ol 
+            each indxFruit in fruits
+                // kann ein beliebiges Konstrukt sein in der Schleife
+
+                // li= indxFruit - simple Variable mit indexVariable
+                
+                // createListElement(indxFruit) - Funktion
+                +fruitElement(oneFruit)
+                // Funktion mit Rückgabewert + eingebunden aus fruits.pug
+
+                // creatListElement ist eine Funktion, die wir in der ts Datei definiert haben
+                // mit + vor der Funktion -> wird der Rückgabewert der Funktion direkt in die Liste geschrieben
+
+        // einfache Liste
+        //ol
+        //    li apple 
+        //    li banana 
+        //    li clementine
+        
+        footer
+            p © 2025 Alle Rechte vorbehalten für Blok
+            a(href="/impressum") Impressum

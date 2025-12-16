@@ -1,0 +1,21 @@
+include ../mixins/listElementsHelpers.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Blok        
+        // # Variablen in Pug geht auch mit = und :
+        // # und {} Markieren Variablen in Pug
+        link(rel="stylesheet", href="/styles/base.css")
+    body 
+        include ../partials/header.pug
+        
+        main
+            block content
+
+        footer
+            br
+            p © 2025 Alle Rechte vorbehalten für Blok
+            a(href="/impressum") Impressum

@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #24ec24;
+    --accent-color: #8BF241;
+    --primary-background-color: #a9ebbf;
+    --secondary-background-color: #ffebbf;
+    --font-color: #22200a;
+    --secondary-font-color: #41F27E;
+    --spacing: 1.5rem;
+    --base-font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url('/fonts/CourierNew.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    display: flex;
+    flex-direction: collumn;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+}
+
+.flex-item {
+    flex: 1;
+    flex: 0 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+.header {
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+p {
+    font-size: var(--base-font-size);
+    line-height:  1.5;
+}
+
+header {
+    background-color: var(--secondary-background-color);
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    margin: var(--spacing);
+    font-family: 'Courier New', Courier, monospace;
+
+}

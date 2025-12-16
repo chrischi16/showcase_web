@@ -1,0 +1,33 @@
+extends ../layouts/full-html.pug
+
+block content
+    - var currentBlogpost
+    h1= currentBlogpost.title
+    a(href=`/profile/${authorId}`) 
+        p= currentBlogpost.meta.author
+    br
+    br
+    each section in currentBlogpost.body
+        section
+            h2= section.subtitle
+            p= section.text
+            if section.image
+                img(src=section.image, alt="Bild zum Abschnitt")
+            if section.layout === "center"
+                div(style="text-align: center;") 
+                    p= section.text
+    br
+    br
+    h2 Kommentarsektion
+    br
+    each comment in currentBlogpost.comments 
+        section
+            a(href=`/profile/${comment.author_id}`) 
+                p= comment.author
+            p= comment.text
+            p= '▲ ' + comment.votes
+
+            form(action="/blogpost/currentBlogpost.id/comment/comment.blogpostId/upvote", method="post") 
+               input(type="submit", value="△")
+            form(action="/blogpost/currentBlogpost.id/comment/comment.blogpostId/downvote", method="post") 
+                input(type="submit", value="▽", action="/blogpost/currentBlogpost.id/comment/comment.blogpostId/downvote")

@@ -1,0 +1,20 @@
+extends ../layouts/full-html.pug
+
+block content
+    form(action="/login", method="post")
+        label= info
+        br 
+        br
+
+
+        label Benutzername
+        input(name="username", type="text")
+        br
+        br
+
+
+        label Passwort
+        input(name="password", type="password", required)
+        br
+
+        input(value="Bestätigen", type="submit")

@@ -1,0 +1,16 @@
+// mixins = Funktionsaufrufe in Pug
+mixin fruitElement(fruit) 
+    li #{fruit}
+mixin allUserSkills(skill) 
+    li #{skill}
+mixin popularCommentElement(comment) 
+    li #{comment}
+mixin blogpostPreview(post) 
+    a(href=`/blogpost/${post.id}`) 
+        h2= post.title
+        p= post.body[0].text.slice(0,100) + "..."
+mixin commentPreview(comment) 
+    a(href=`/blogpost/${comment.blogpostId}`) 
+        p= comment.text.slice(0,100) + "..."
+    a(href=`/profile/${comment.author_id}`) 
+        p= comment.author

@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "author": "Alliterierende Alina",
+    "firstname": "Desirae",
+    "lastname": "Rawlins",
+    "avatar": "https://robohash.org/repellendusestconsectetur.png?size=200x200&set=set1",
+    "skills": [
+      "Medication Therapy Management",
+      "MMORPG",
+      "VXML",
+      "EWM",
+      "MBCI"
+    ],
+    "passwordHash": "f08c2d1931476aa0fbcfc271db4404d80477fb0fe4271ae07668c48ea8a5ffefacf1de7f6027d33dbae69d2964156d27ddff4d75ae172c4d7e2cc0edc0d16ee3"
+  },
+  {
+    "id": 2,
+    "author": "Traumhaft Theisen",
+    "firstname": "Cosmo",
+    "lastname": "Lavens",
+    "avatar": "https://robohash.org/voluptatemminusex.png?size=200x200&set=set1",
+    "skills": [
+      "Active TS/SCI Clearance",
+      "Capacity Utilization",
+      "Wufoo",
+      "OTDR"
+    ],
+    "passwordHash": "f08c2d1931476aa0fbcfc271db4404d80477fb0fe4271ae07668c48ea8a5ffefacf1de7f6027d33dbae69d2964156d27ddff4d75ae172c4d7e2cc0edc0d16ee3"
+  },
+  {
+    "id": 3,
+    "author": "Grinse Greta",
+    "firstname": "Celia",
+    "lastname": "Pidwell",
+    "avatar": "https://robohash.org/etassumendaomnis.png?size=200x200&set=set1",
+    "skills": [
+      "Root Cause Analysis",
+      "TPD",
+      "Volunteer Recruiting",
+      "RUP",
+      "XMPie",
+      "ABAP",
+      "EBSCO",
+      "Air Freight",
+      "RTB",
+      "Unified Communications"
+    ],
+    "passwordHash": "f08c2d1931476aa0fbcfc271db4404d80477fb0fe4271ae07668c48ea8a5ffefacf1de7f6027d33dbae69d2964156d27ddff4d75ae172c4d7e2cc0edc0d16ee3"
+  },
+  {
+    "id": 4,
+    "author": "Fröhlich Franken",
+    "firstname": "Liane",
+    "lastname": "Vassel",
+    "avatar": "https://robohash.org/quisconsecteturdolorem.png?size=200x200&set=set1",
+    "skills": [
+      "JIRA",
+      "Report Writing",
+      "QPST",
+      "Time-efficient",
+      "DNV",
+      "SAP MDM",
+      "Young Adults",
+      "Sustainability"
+    ],
+    "passwordHash": "f08c2d1931476aa0fbcfc271db4404d80477fb0fe4271ae07668c48ea8a5ffefacf1de7f6027d33dbae69d2964156d27ddff4d75ae172c4d7e2cc0edc0d16ee3"
+  },
+  {
+    "id": 5,
+    "author": "Crazy Clown",
+    "firstname": "Elias",
+    "lastname": "Spionek",
+    "avatar": "https://robohash.org/totamvitaeeligendi.png?size=200x200&set=set1",
+    "skills": [
+      "RFC 1231",
+      "ISO 27001"
+    ],
+    "passwordHash": "f08c2d1931476aa0fbcfc271db4404d80477fb0fe4271ae07668c48ea8a5ffefacf1de7f6027d33dbae69d2964156d27ddff4d75ae172c4d7e2cc0edc0d16ee3"
+  }
+]
