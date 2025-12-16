@@ -1,2 +1,2 @@
 # showcase_web
-Vorschau zu einigen Webprojekten
+Vorschau zu einem vorläufigem Webprojekt
